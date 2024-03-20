@@ -1,5 +1,6 @@
 import './App.css';
 import Banner from './Components/Banner/Banner';
+import Footer from './Components/Footer/Footer';
 import NavBar from './Components/NavBar/NavBar';
 import RowPost from './Components/RowPost/RowPost';
 import {originals,action,comedy,horror,romance,documentary} from './urls'
@@ -15,6 +16,7 @@ function App() {
       <RowPost url={horror} title="Horror" isSmall />
       <RowPost url={romance} title="Romance" isSmall />
       <RowPost url={documentary} title="Documentary" isSmall />
+      <Footer/>
     </div>
   );
 }
