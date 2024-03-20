@@ -10,10 +10,11 @@ const Banner = () => {
 
     useEffect(() => {
       axios.get(`trending/all/week?api_key=${API_KEY}&language=en-US`).then((response)=>{
+        console.log(response.data.results)
         const randomIndex = Math.floor(Math.random() * response.data.results.length);
         const randomMovie = response.data.results[randomIndex];
         setMovie(randomMovie);
-        console.log(randomMovie.title);
+        // console.log(randomMovie.title);
       })
     }, [])  
     
